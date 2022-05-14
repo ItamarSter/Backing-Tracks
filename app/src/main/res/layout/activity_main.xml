@@ -6,6 +6,14 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <View
+        android:layout_width="4dp"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/guidelineV1"
+        app:layout_constraintRight_toRightOf="@+id/guidelineV1"
+        android:background="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"/>
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guidelineV1"
@@ -118,156 +126,167 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.834" />
 
-    <TextView
+    <itamar.stern.backingtracks.custom_views.NoteView
         android:id="@+id/e32"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="4dp"
         android:gravity="center"
-        android:background="@color/teal_200"
+        app:noteFile="@raw/e3"
+        android:background="#eeeeee"
         android:text="e"
         app:layout_constraintBottom_toTopOf="@+id/guidelineH1"
         app:layout_constraintEnd_toStartOf="@+id/guidelineV1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
+    <itamar.stern.backingtracks.custom_views.NoteView
         android:id="@+id/e1"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="4dp"
         android:gravity="center"
-        android:background="@color/teal_200"
+        app:noteFile="@raw/e1"
         android:text="e"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guidelineV1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guidelineH5" />
 
-    <TextView
+    <itamar.stern.backingtracks.custom_views.NoteView
         android:id="@+id/f1"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="4dp"
         android:gravity="center"
         android:background="@color/teal_200"
+        app:noteFile="@raw/f1"
         android:text="f"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guidelineV2"
         app:layout_constraintStart_toStartOf="@+id/guidelineV1"
         app:layout_constraintTop_toTopOf="@+id/guidelineH5" />
 
-    <TextView
+    <itamar.stern.backingtracks.custom_views.NoteView
         android:id="@+id/a12"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="4dp"
         android:gravity="center"
         android:background="@color/teal_200"
+        app:noteFile="@raw/a1"
         android:text="a"
         app:layout_constraintBottom_toTopOf="@+id/guidelineH5"
         app:layout_constraintEnd_toStartOf="@+id/guidelineV1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guidelineH4" />
 
-    <TextView
+    <itamar.stern.backingtracks.custom_views.NoteView
         android:id="@+id/as1"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="4dp"
         android:gravity="center"
         android:background="@color/teal_200"
+        app:noteFile="@raw/as1"
         android:text="a#"
         app:layout_constraintBottom_toTopOf="@+id/guidelineH5"
         app:layout_constraintEnd_toStartOf="@+id/guidelineV2"
         app:layout_constraintStart_toStartOf="@+id/guidelineV1"
         app:layout_constraintTop_toTopOf="@+id/guidelineH4" />
 
-    <TextView
+    <itamar.stern.backingtracks.custom_views.NoteView
         android:id="@+id/d22"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="4dp"
         android:gravity="center"
         android:background="@color/teal_200"
+        app:noteFile="@raw/d2"
         android:text="d"
         app:layout_constraintBottom_toTopOf="@+id/guidelineH4"
         app:layout_constraintEnd_toStartOf="@+id/guidelineV1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guidelineH3" />
 
-    <TextView
+    <itamar.stern.backingtracks.custom_views.NoteView
         android:id="@+id/fs1"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="4dp"
         android:gravity="center"
         android:background="@color/teal_200"
+        app:noteFile="@raw/fs1"
         android:text="f#"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guidelineV3"
         app:layout_constraintStart_toStartOf="@+id/guidelineV2"
         app:layout_constraintTop_toTopOf="@+id/guidelineH5" />
 
-    <TextView
+    <itamar.stern.backingtracks.custom_views.NoteView
         android:id="@+id/b1"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="4dp"
         android:gravity="center"
         android:background="@color/teal_200"
+        app:noteFile="@raw/b1"
         android:text="b"
         app:layout_constraintBottom_toTopOf="@+id/guidelineH5"
         app:layout_constraintEnd_toStartOf="@+id/guidelineV3"
         app:layout_constraintStart_toStartOf="@+id/guidelineV2"
         app:layout_constraintTop_toTopOf="@+id/guidelineH4" />
 
-    <TextView
+    <itamar.stern.backingtracks.custom_views.NoteView
         android:id="@+id/g1"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="4dp"
         android:gravity="center"
         android:background="@color/teal_200"
+        app:noteFile="@raw/g1"
         android:text="g"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guidelineV4"
         app:layout_constraintStart_toStartOf="@+id/guidelineV3"
         app:layout_constraintTop_toTopOf="@+id/guidelineH5" />
 
-    <TextView
+    <itamar.stern.backingtracks.custom_views.NoteView
         android:id="@+id/gs1"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="4dp"
         android:gravity="center"
         android:background="@color/teal_200"
+        app:noteFile="@raw/gs1"
         android:text="g#"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guidelineV5"
         app:layout_constraintStart_toStartOf="@+id/guidelineV4"
         app:layout_constraintTop_toTopOf="@+id/guidelineH5" />
 
-    <TextView
+    <itamar.stern.backingtracks.custom_views.NoteView
         android:id="@+id/a1"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="4dp"
         android:gravity="center"
         android:background="@color/teal_200"
+        app:noteFile="@raw/a1"
         android:text="a"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guidelineV6"
         app:layout_constraintStart_toStartOf="@+id/guidelineV5"
         app:layout_constraintTop_toTopOf="@+id/guidelineH5" />
 
-    <TextView
+    <itamar.stern.backingtracks.custom_views.NoteView
         android:id="@+id/c2"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="4dp"
         android:gravity="center"
         android:background="@color/teal_200"
+        app:noteFile="@raw/c2"
         android:text="c"
         app:layout_constraintBottom_toTopOf="@+id/guidelineH5"
         app:layout_constraintEnd_toStartOf="@+id/guidelineV4"
@@ -275,130 +294,140 @@
         app:layout_constraintTop_toTopOf="@+id/guidelineH4"
         app:layout_constraintVertical_bias="0.509" />
 
-    <TextView
+    <itamar.stern.backingtracks.custom_views.NoteView
         android:id="@+id/cs2"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="4dp"
         android:gravity="center"
         android:background="@color/teal_200"
+        app:noteFile="@raw/cs2"
         android:text="c#"
         app:layout_constraintBottom_toTopOf="@+id/guidelineH5"
         app:layout_constraintEnd_toStartOf="@+id/guidelineV5"
         app:layout_constraintStart_toStartOf="@+id/guidelineV4"
         app:layout_constraintTop_toTopOf="@+id/guidelineH4" />
 
-    <TextView
+    <itamar.stern.backingtracks.custom_views.NoteView
         android:id="@+id/d2"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="4dp"
         android:gravity="center"
         android:background="@color/teal_200"
+        app:noteFile="@raw/d2"
         android:text="d"
         app:layout_constraintBottom_toTopOf="@+id/guidelineH5"
         app:layout_constraintEnd_toStartOf="@+id/guidelineV6"
         app:layout_constraintStart_toStartOf="@+id/guidelineV5"
         app:layout_constraintTop_toTopOf="@+id/guidelineH4" />
 
-    <TextView
+    <itamar.stern.backingtracks.custom_views.NoteView
         android:id="@+id/ds2"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="4dp"
         android:gravity="center"
         android:background="@color/teal_200"
+        app:noteFile="@raw/ds2"
         android:text="d#"
         app:layout_constraintBottom_toTopOf="@+id/guidelineH4"
         app:layout_constraintEnd_toStartOf="@+id/guidelineV2"
         app:layout_constraintStart_toStartOf="@+id/guidelineV1"
         app:layout_constraintTop_toTopOf="@+id/guidelineH3" />
 
-    <TextView
+    <itamar.stern.backingtracks.custom_views.NoteView
         android:id="@+id/e2"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="4dp"
         android:gravity="center"
         android:background="@color/teal_200"
+        app:noteFile="@raw/e2"
         android:text="e"
         app:layout_constraintBottom_toTopOf="@+id/guidelineH4"
         app:layout_constraintEnd_toStartOf="@+id/guidelineV3"
         app:layout_constraintStart_toStartOf="@+id/guidelineV2"
         app:layout_constraintTop_toTopOf="@+id/guidelineH3" />
 
-    <TextView
+    <itamar.stern.backingtracks.custom_views.NoteView
         android:id="@+id/f2"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="4dp"
         android:gravity="center"
         android:background="@color/teal_200"
+        app:noteFile="@raw/f2"
         android:text="f"
         app:layout_constraintBottom_toTopOf="@+id/guidelineH4"
         app:layout_constraintEnd_toStartOf="@+id/guidelineV4"
         app:layout_constraintStart_toStartOf="@+id/guidelineV3"
         app:layout_constraintTop_toTopOf="@+id/guidelineH3" />
 
-    <TextView
+    <itamar.stern.backingtracks.custom_views.NoteView
         android:id="@+id/fs2"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="4dp"
         android:gravity="center"
         android:background="@color/teal_200"
+        app:noteFile="@raw/fs2"
         android:text="f#"
         app:layout_constraintBottom_toTopOf="@+id/guidelineH4"
         app:layout_constraintEnd_toStartOf="@+id/guidelineV5"
         app:layout_constraintStart_toStartOf="@+id/guidelineV4"
         app:layout_constraintTop_toTopOf="@+id/guidelineH3" />
 
-    <TextView
+    <itamar.stern.backingtracks.custom_views.NoteView
         android:id="@+id/g2"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="4dp"
         android:gravity="center"
         android:background="@color/teal_200"
+        app:noteFile="@raw/g2"
         android:text="g"
         app:layout_constraintBottom_toTopOf="@+id/guidelineH4"
         app:layout_constraintEnd_toStartOf="@+id/guidelineV6"
         app:layout_constraintStart_toStartOf="@+id/guidelineV5"
         app:layout_constraintTop_toTopOf="@+id/guidelineH3" />
 
-    <TextView
+    <itamar.stern.backingtracks.custom_views.NoteView
         android:id="@+id/g22"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="4dp"
         android:gravity="center"
         android:background="@color/teal_200"
+        app:noteFile="@raw/g2"
         android:text="g"
         app:layout_constraintBottom_toTopOf="@+id/guidelineH3"
         app:layout_constraintEnd_toStartOf="@+id/guidelineV1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guidelineH2" />
 
-    <TextView
+    <itamar.stern.backingtracks.custom_views.NoteView
         android:id="@+id/gs2"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="4dp"
         android:gravity="center"
         android:background="@color/teal_200"
+        app:noteFile="@raw/gs2"
         android:text="g#"
         app:layout_constraintBottom_toTopOf="@+id/guidelineH3"
         app:layout_constraintEnd_toStartOf="@+id/guidelineV2"
         app:layout_constraintStart_toStartOf="@+id/guidelineV1"
         app:layout_constraintTop_toTopOf="@+id/guidelineH2" />
 
-    <TextView
+    <itamar.stern.backingtracks.custom_views.NoteView
         android:id="@+id/a2"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="4dp"
         android:gravity="center"
         android:background="@color/teal_200"
+        app:noteFile="@raw/a2"
         android:text="a"
         android:textAlignment="center"
         app:layout_constraintBottom_toTopOf="@+id/guidelineH3"
@@ -406,182 +435,196 @@
         app:layout_constraintStart_toStartOf="@+id/guidelineV2"
         app:layout_constraintTop_toTopOf="@+id/guidelineH2" />
 
-    <TextView
+    <itamar.stern.backingtracks.custom_views.NoteView
         android:id="@+id/as2"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="4dp"
         android:gravity="center"
         android:background="@color/teal_200"
+        app:noteFile="@raw/as2"
         android:text="a#"
         app:layout_constraintBottom_toTopOf="@+id/guidelineH3"
         app:layout_constraintEnd_toStartOf="@+id/guidelineV4"
         app:layout_constraintStart_toStartOf="@+id/guidelineV3"
         app:layout_constraintTop_toTopOf="@+id/guidelineH2" />
 
-    <TextView
+    <itamar.stern.backingtracks.custom_views.NoteView
         android:id="@+id/b2"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="4dp"
         android:gravity="center"
         android:background="@color/teal_200"
+        app:noteFile="@raw/b2"
         android:text="b"
         app:layout_constraintBottom_toTopOf="@+id/guidelineH3"
         app:layout_constraintEnd_toStartOf="@+id/guidelineV5"
         app:layout_constraintStart_toStartOf="@+id/guidelineV4"
         app:layout_constraintTop_toTopOf="@+id/guidelineH2" />
 
-    <TextView
+    <itamar.stern.backingtracks.custom_views.NoteView
         android:id="@+id/c3"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="4dp"
         android:gravity="center"
         android:background="@color/teal_200"
+        app:noteFile="@raw/c3"
         android:text="c"
         app:layout_constraintBottom_toTopOf="@+id/guidelineH3"
         app:layout_constraintEnd_toStartOf="@+id/guidelineV6"
         app:layout_constraintStart_toStartOf="@+id/guidelineV5"
         app:layout_constraintTop_toTopOf="@+id/guidelineH2" />
 
-    <TextView
+    <itamar.stern.backingtracks.custom_views.NoteView
         android:id="@+id/b22"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="4dp"
         android:gravity="center"
         android:background="@color/teal_200"
+        app:noteFile="@raw/b2"
         android:text="b"
         app:layout_constraintBottom_toTopOf="@+id/guidelineH2"
         app:layout_constraintEnd_toStartOf="@+id/guidelineV1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guidelineH1" />
 
-    <TextView
+    <itamar.stern.backingtracks.custom_views.NoteView
         android:id="@+id/c32"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="4dp"
         android:gravity="center"
         android:background="@color/teal_200"
+        app:noteFile="@raw/c3"
         android:text="c"
         app:layout_constraintBottom_toTopOf="@+id/guidelineH2"
         app:layout_constraintEnd_toStartOf="@+id/guidelineV2"
         app:layout_constraintStart_toStartOf="@+id/guidelineV1"
         app:layout_constraintTop_toTopOf="@+id/guidelineH1" />
 
-    <TextView
+    <itamar.stern.backingtracks.custom_views.NoteView
         android:id="@+id/cs3"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="4dp"
         android:gravity="center"
         android:background="@color/teal_200"
+        app:noteFile="@raw/cs3"
         android:text="c#"
         app:layout_constraintBottom_toTopOf="@+id/guidelineH2"
         app:layout_constraintEnd_toStartOf="@+id/guidelineV3"
         app:layout_constraintStart_toStartOf="@+id/guidelineV2"
         app:layout_constraintTop_toTopOf="@+id/guidelineH1" />
 
-    <TextView
+    <itamar.stern.backingtracks.custom_views.NoteView
         android:id="@+id/d3"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="4dp"
         android:gravity="center"
         android:background="@color/teal_200"
+        app:noteFile="@raw/d3"
         android:text="d"
         app:layout_constraintBottom_toTopOf="@+id/guidelineH2"
         app:layout_constraintEnd_toStartOf="@+id/guidelineV4"
         app:layout_constraintStart_toStartOf="@+id/guidelineV3"
         app:layout_constraintTop_toTopOf="@+id/guidelineH1" />
 
-    <TextView
+    <itamar.stern.backingtracks.custom_views.NoteView
         android:id="@+id/ds3"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="4dp"
         android:gravity="center"
         android:background="@color/teal_200"
+        app:noteFile="@raw/ds3"
         android:text="d#"
         app:layout_constraintBottom_toTopOf="@+id/guidelineH2"
         app:layout_constraintEnd_toStartOf="@+id/guidelineV5"
         app:layout_constraintStart_toStartOf="@+id/guidelineV4"
         app:layout_constraintTop_toTopOf="@+id/guidelineH1" />
 
-    <TextView
+    <itamar.stern.backingtracks.custom_views.NoteView
         android:id="@+id/e3"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="4dp"
         android:gravity="center"
         android:background="@color/teal_200"
+        app:noteFile="@raw/e3"
         android:text="e"
         app:layout_constraintBottom_toTopOf="@+id/guidelineH2"
         app:layout_constraintEnd_toStartOf="@+id/guidelineV6"
         app:layout_constraintStart_toStartOf="@+id/guidelineV5"
         app:layout_constraintTop_toTopOf="@+id/guidelineH1" />
 
-    <TextView
+    <itamar.stern.backingtracks.custom_views.NoteView
         android:id="@+id/f3"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="4dp"
         android:gravity="center"
         android:background="@color/teal_200"
+        app:noteFile="@raw/f3"
         android:text="f"
         app:layout_constraintBottom_toTopOf="@+id/guidelineH1"
         app:layout_constraintEnd_toStartOf="@+id/guidelineV2"
         app:layout_constraintStart_toStartOf="@+id/guidelineV1"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
+    <itamar.stern.backingtracks.custom_views.NoteView
         android:id="@+id/fs3"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="4dp"
         android:gravity="center"
         android:background="@color/teal_200"
+        app:noteFile="@raw/fs3"
         android:text="f#"
         app:layout_constraintBottom_toTopOf="@+id/guidelineH1"
         app:layout_constraintEnd_toStartOf="@+id/guidelineV3"
         app:layout_constraintStart_toStartOf="@+id/guidelineV2"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
+    <itamar.stern.backingtracks.custom_views.NoteView
         android:id="@+id/g3"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="4dp"
         android:gravity="center"
         android:background="@color/teal_200"
+        app:noteFile="@raw/g3"
         android:text="g"
         app:layout_constraintBottom_toTopOf="@+id/guidelineH1"
         app:layout_constraintEnd_toStartOf="@+id/guidelineV4"
         app:layout_constraintStart_toStartOf="@+id/guidelineV3"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
+    <itamar.stern.backingtracks.custom_views.NoteView
         android:id="@+id/gs3"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="4dp"
         android:gravity="center"
         android:background="@color/teal_200"
+        app:noteFile="@raw/gs3"
         android:text="g#"
         app:layout_constraintBottom_toTopOf="@+id/guidelineH1"
         app:layout_constraintEnd_toStartOf="@+id/guidelineV5"
         app:layout_constraintStart_toStartOf="@+id/guidelineV4"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
+    <itamar.stern.backingtracks.custom_views.NoteView
         android:id="@+id/a3"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="4dp"
         android:gravity="center"
         android:background="@color/teal_200"
+        app:noteFile="@raw/a3"
         android:text="a"
         app:layout_constraintBottom_toTopOf="@+id/guidelineH1"
         app:layout_constraintEnd_toStartOf="@+id/guidelineV6"
@@ -625,5 +668,14 @@
         app:layout_constraintEnd_toEndOf="@+id/btnResetSet"
         app:layout_constraintTop_toBottomOf="@+id/btnResetSet" />
 
-
+    <itamar.stern.backingtracks.custom_views.NoteView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="28dp"
+        android:padding="24dp"
+        android:background="@color/teal_200"
+        android:text="space"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guidelineV6" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -8,11 +8,16 @@ class MyMediaPlayer(
     private val context: Context
 ) {
     fun startAudio(@RawRes audioFile: Int) {
-        MediaPlayer.create(context, audioFile).apply {
-            start()
-            setOnCompletionListener {
-                it.release()
+        try {
+            MediaPlayer.create(context, audioFile).apply {
+                start()
+                setOnCompletionListener {
+                    it.release()
+                }
             }
+        } catch (e: Throwable) {
+            //problem in the audio file
         }
+
     }
 }
