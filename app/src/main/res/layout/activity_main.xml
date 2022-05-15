@@ -645,7 +645,6 @@
         android:id="@+id/btnPauseSet"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
         android:text="pause set"
         app:layout_constraintEnd_toEndOf="@+id/btnStartSet"
         app:layout_constraintTop_toBottomOf="@+id/btnStartSet" />
@@ -654,7 +653,6 @@
         android:id="@+id/btnResetSet"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
         android:text="reset"
         app:layout_constraintEnd_toEndOf="@+id/btnPauseSet"
         app:layout_constraintTop_toBottomOf="@+id/btnPauseSet" />
@@ -663,7 +661,6 @@
         android:id="@+id/btnDeleteStep"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
         android:text="delete step"
         app:layout_constraintEnd_toEndOf="@+id/btnResetSet"
         app:layout_constraintTop_toBottomOf="@+id/btnResetSet" />
@@ -678,4 +675,12 @@
         android:text="space"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="@+id/guidelineV6" />
+
+    <Button
+        android:id="@+id/btnChord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="add chord"
+        app:layout_constraintEnd_toEndOf="@+id/btnDeleteStep"
+        app:layout_constraintTop_toBottomOf="@+id/btnDeleteStep" />
 </androidx.constraintlayout.widget.ConstraintLayout>
