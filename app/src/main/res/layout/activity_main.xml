@@ -6,636 +6,12 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <View
-        android:layout_width="4dp"
-        android:layout_height="match_parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintLeft_toLeftOf="@+id/guidelineV1"
-        app:layout_constraintRight_toRightOf="@+id/guidelineV1"
-        android:background="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"/>
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guidelineV1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_begin="70dp" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guidelineV2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_begin="140dp" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guidelineV3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_begin="210dp" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guidelineV4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_begin="280dp" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guidelineV5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_begin="350dp" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guidelineV6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_begin="420dp" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guidelineV7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_begin="490dp" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guidelineV8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_begin="560dp" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guidelineV9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_begin="630dp" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guidelineV10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_begin="700dp" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guidelineV11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_begin="770dp" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guidelineH1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.166" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guidelineH2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.332" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guidelineH3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.498" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guidelineH4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.664" />
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guidelineH5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.834" />
-
-    <itamar.stern.backingtracks.custom_views.NoteView
-        android:id="@+id/e32"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_margin="4dp"
-        android:gravity="center"
-        app:noteFile="@raw/e3"
-        android:background="#eeeeee"
-        android:text="e"
-        app:layout_constraintBottom_toTopOf="@+id/guidelineH1"
-        app:layout_constraintEnd_toStartOf="@+id/guidelineV1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <itamar.stern.backingtracks.custom_views.NoteView
-        android:id="@+id/e1"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_margin="4dp"
-        android:gravity="center"
-        app:noteFile="@raw/e1"
-        android:text="e"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/guidelineV1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guidelineH5" />
-
-    <itamar.stern.backingtracks.custom_views.NoteView
-        android:id="@+id/f1"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_margin="4dp"
-        android:gravity="center"
-        android:background="@color/teal_200"
-        app:noteFile="@raw/f1"
-        android:text="f"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/guidelineV2"
-        app:layout_constraintStart_toStartOf="@+id/guidelineV1"
-        app:layout_constraintTop_toTopOf="@+id/guidelineH5" />
-
-    <itamar.stern.backingtracks.custom_views.NoteView
-        android:id="@+id/a12"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_margin="4dp"
-        android:gravity="center"
-        android:background="@color/teal_200"
-        app:noteFile="@raw/a1"
-        android:text="a"
-        app:layout_constraintBottom_toTopOf="@+id/guidelineH5"
-        app:layout_constraintEnd_toStartOf="@+id/guidelineV1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guidelineH4" />
-
-    <itamar.stern.backingtracks.custom_views.NoteView
-        android:id="@+id/as1"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_margin="4dp"
-        android:gravity="center"
-        android:background="@color/teal_200"
-        app:noteFile="@raw/as1"
-        android:text="a#"
-        app:layout_constraintBottom_toTopOf="@+id/guidelineH5"
-        app:layout_constraintEnd_toStartOf="@+id/guidelineV2"
-        app:layout_constraintStart_toStartOf="@+id/guidelineV1"
-        app:layout_constraintTop_toTopOf="@+id/guidelineH4" />
-
-    <itamar.stern.backingtracks.custom_views.NoteView
-        android:id="@+id/d22"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_margin="4dp"
-        android:gravity="center"
-        android:background="@color/teal_200"
-        app:noteFile="@raw/d2"
-        android:text="d"
-        app:layout_constraintBottom_toTopOf="@+id/guidelineH4"
-        app:layout_constraintEnd_toStartOf="@+id/guidelineV1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guidelineH3" />
-
-    <itamar.stern.backingtracks.custom_views.NoteView
-        android:id="@+id/fs1"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_margin="4dp"
-        android:gravity="center"
-        android:background="@color/teal_200"
-        app:noteFile="@raw/fs1"
-        android:text="f#"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/guidelineV3"
-        app:layout_constraintStart_toStartOf="@+id/guidelineV2"
-        app:layout_constraintTop_toTopOf="@+id/guidelineH5" />
-
-    <itamar.stern.backingtracks.custom_views.NoteView
-        android:id="@+id/b1"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_margin="4dp"
-        android:gravity="center"
-        android:background="@color/teal_200"
-        app:noteFile="@raw/b1"
-        android:text="b"
-        app:layout_constraintBottom_toTopOf="@+id/guidelineH5"
-        app:layout_constraintEnd_toStartOf="@+id/guidelineV3"
-        app:layout_constraintStart_toStartOf="@+id/guidelineV2"
-        app:layout_constraintTop_toTopOf="@+id/guidelineH4" />
-
-    <itamar.stern.backingtracks.custom_views.NoteView
-        android:id="@+id/g1"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_margin="4dp"
-        android:gravity="center"
-        android:background="@color/teal_200"
-        app:noteFile="@raw/g1"
-        android:text="g"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/guidelineV4"
-        app:layout_constraintStart_toStartOf="@+id/guidelineV3"
-        app:layout_constraintTop_toTopOf="@+id/guidelineH5" />
-
-    <itamar.stern.backingtracks.custom_views.NoteView
-        android:id="@+id/gs1"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_margin="4dp"
-        android:gravity="center"
-        android:background="@color/teal_200"
-        app:noteFile="@raw/gs1"
-        android:text="g#"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/guidelineV5"
-        app:layout_constraintStart_toStartOf="@+id/guidelineV4"
-        app:layout_constraintTop_toTopOf="@+id/guidelineH5" />
-
-    <itamar.stern.backingtracks.custom_views.NoteView
-        android:id="@+id/a1"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_margin="4dp"
-        android:gravity="center"
-        android:background="@color/teal_200"
-        app:noteFile="@raw/a1"
-        android:text="a"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/guidelineV6"
-        app:layout_constraintStart_toStartOf="@+id/guidelineV5"
-        app:layout_constraintTop_toTopOf="@+id/guidelineH5" />
-
-    <itamar.stern.backingtracks.custom_views.NoteView
-        android:id="@+id/c2"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_margin="4dp"
-        android:gravity="center"
-        android:background="@color/teal_200"
-        app:noteFile="@raw/c2"
-        android:text="c"
-        app:layout_constraintBottom_toTopOf="@+id/guidelineH5"
-        app:layout_constraintEnd_toStartOf="@+id/guidelineV4"
-        app:layout_constraintStart_toStartOf="@+id/guidelineV3"
-        app:layout_constraintTop_toTopOf="@+id/guidelineH4"
-        app:layout_constraintVertical_bias="0.509" />
-
-    <itamar.stern.backingtracks.custom_views.NoteView
-        android:id="@+id/cs2"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_margin="4dp"
-        android:gravity="center"
-        android:background="@color/teal_200"
-        app:noteFile="@raw/cs2"
-        android:text="c#"
-        app:layout_constraintBottom_toTopOf="@+id/guidelineH5"
-        app:layout_constraintEnd_toStartOf="@+id/guidelineV5"
-        app:layout_constraintStart_toStartOf="@+id/guidelineV4"
-        app:layout_constraintTop_toTopOf="@+id/guidelineH4" />
-
-    <itamar.stern.backingtracks.custom_views.NoteView
-        android:id="@+id/d2"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_margin="4dp"
-        android:gravity="center"
-        android:background="@color/teal_200"
-        app:noteFile="@raw/d2"
-        android:text="d"
-        app:layout_constraintBottom_toTopOf="@+id/guidelineH5"
-        app:layout_constraintEnd_toStartOf="@+id/guidelineV6"
-        app:layout_constraintStart_toStartOf="@+id/guidelineV5"
-        app:layout_constraintTop_toTopOf="@+id/guidelineH4" />
-
-    <itamar.stern.backingtracks.custom_views.NoteView
-        android:id="@+id/ds2"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_margin="4dp"
-        android:gravity="center"
-        android:background="@color/teal_200"
-        app:noteFile="@raw/ds2"
-        android:text="d#"
-        app:layout_constraintBottom_toTopOf="@+id/guidelineH4"
-        app:layout_constraintEnd_toStartOf="@+id/guidelineV2"
-        app:layout_constraintStart_toStartOf="@+id/guidelineV1"
-        app:layout_constraintTop_toTopOf="@+id/guidelineH3" />
-
-    <itamar.stern.backingtracks.custom_views.NoteView
-        android:id="@+id/e2"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_margin="4dp"
-        android:gravity="center"
-        android:background="@color/teal_200"
-        app:noteFile="@raw/e2"
-        android:text="e"
-        app:layout_constraintBottom_toTopOf="@+id/guidelineH4"
-        app:layout_constraintEnd_toStartOf="@+id/guidelineV3"
-        app:layout_constraintStart_toStartOf="@+id/guidelineV2"
-        app:layout_constraintTop_toTopOf="@+id/guidelineH3" />
-
-    <itamar.stern.backingtracks.custom_views.NoteView
-        android:id="@+id/f2"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_margin="4dp"
-        android:gravity="center"
-        android:background="@color/teal_200"
-        app:noteFile="@raw/f2"
-        android:text="f"
-        app:layout_constraintBottom_toTopOf="@+id/guidelineH4"
-        app:layout_constraintEnd_toStartOf="@+id/guidelineV4"
-        app:layout_constraintStart_toStartOf="@+id/guidelineV3"
-        app:layout_constraintTop_toTopOf="@+id/guidelineH3" />
-
-    <itamar.stern.backingtracks.custom_views.NoteView
-        android:id="@+id/fs2"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_margin="4dp"
-        android:gravity="center"
-        android:background="@color/teal_200"
-        app:noteFile="@raw/fs2"
-        android:text="f#"
-        app:layout_constraintBottom_toTopOf="@+id/guidelineH4"
-        app:layout_constraintEnd_toStartOf="@+id/guidelineV5"
-        app:layout_constraintStart_toStartOf="@+id/guidelineV4"
-        app:layout_constraintTop_toTopOf="@+id/guidelineH3" />
-
-    <itamar.stern.backingtracks.custom_views.NoteView
-        android:id="@+id/g2"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_margin="4dp"
-        android:gravity="center"
-        android:background="@color/teal_200"
-        app:noteFile="@raw/g2"
-        android:text="g"
-        app:layout_constraintBottom_toTopOf="@+id/guidelineH4"
-        app:layout_constraintEnd_toStartOf="@+id/guidelineV6"
-        app:layout_constraintStart_toStartOf="@+id/guidelineV5"
-        app:layout_constraintTop_toTopOf="@+id/guidelineH3" />
-
-    <itamar.stern.backingtracks.custom_views.NoteView
-        android:id="@+id/g22"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_margin="4dp"
-        android:gravity="center"
-        android:background="@color/teal_200"
-        app:noteFile="@raw/g2"
-        android:text="g"
-        app:layout_constraintBottom_toTopOf="@+id/guidelineH3"
-        app:layout_constraintEnd_toStartOf="@+id/guidelineV1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guidelineH2" />
-
-    <itamar.stern.backingtracks.custom_views.NoteView
-        android:id="@+id/gs2"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_margin="4dp"
-        android:gravity="center"
-        android:background="@color/teal_200"
-        app:noteFile="@raw/gs2"
-        android:text="g#"
-        app:layout_constraintBottom_toTopOf="@+id/guidelineH3"
-        app:layout_constraintEnd_toStartOf="@+id/guidelineV2"
-        app:layout_constraintStart_toStartOf="@+id/guidelineV1"
-        app:layout_constraintTop_toTopOf="@+id/guidelineH2" />
-
-    <itamar.stern.backingtracks.custom_views.NoteView
-        android:id="@+id/a2"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_margin="4dp"
-        android:gravity="center"
-        android:background="@color/teal_200"
-        app:noteFile="@raw/a2"
-        android:text="a"
-        android:textAlignment="center"
-        app:layout_constraintBottom_toTopOf="@+id/guidelineH3"
-        app:layout_constraintEnd_toStartOf="@+id/guidelineV3"
-        app:layout_constraintStart_toStartOf="@+id/guidelineV2"
-        app:layout_constraintTop_toTopOf="@+id/guidelineH2" />
-
-    <itamar.stern.backingtracks.custom_views.NoteView
-        android:id="@+id/as2"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_margin="4dp"
-        android:gravity="center"
-        android:background="@color/teal_200"
-        app:noteFile="@raw/as2"
-        android:text="a#"
-        app:layout_constraintBottom_toTopOf="@+id/guidelineH3"
-        app:layout_constraintEnd_toStartOf="@+id/guidelineV4"
-        app:layout_constraintStart_toStartOf="@+id/guidelineV3"
-        app:layout_constraintTop_toTopOf="@+id/guidelineH2" />
-
-    <itamar.stern.backingtracks.custom_views.NoteView
-        android:id="@+id/b2"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_margin="4dp"
-        android:gravity="center"
-        android:background="@color/teal_200"
-        app:noteFile="@raw/b2"
-        android:text="b"
-        app:layout_constraintBottom_toTopOf="@+id/guidelineH3"
-        app:layout_constraintEnd_toStartOf="@+id/guidelineV5"
-        app:layout_constraintStart_toStartOf="@+id/guidelineV4"
-        app:layout_constraintTop_toTopOf="@+id/guidelineH2" />
-
-    <itamar.stern.backingtracks.custom_views.NoteView
-        android:id="@+id/c3"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_margin="4dp"
-        android:gravity="center"
-        android:background="@color/teal_200"
-        app:noteFile="@raw/c3"
-        android:text="c"
-        app:layout_constraintBottom_toTopOf="@+id/guidelineH3"
-        app:layout_constraintEnd_toStartOf="@+id/guidelineV6"
-        app:layout_constraintStart_toStartOf="@+id/guidelineV5"
-        app:layout_constraintTop_toTopOf="@+id/guidelineH2" />
-
-    <itamar.stern.backingtracks.custom_views.NoteView
-        android:id="@+id/b22"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_margin="4dp"
-        android:gravity="center"
-        android:background="@color/teal_200"
-        app:noteFile="@raw/b2"
-        android:text="b"
-        app:layout_constraintBottom_toTopOf="@+id/guidelineH2"
-        app:layout_constraintEnd_toStartOf="@+id/guidelineV1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guidelineH1" />
-
-    <itamar.stern.backingtracks.custom_views.NoteView
-        android:id="@+id/c32"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_margin="4dp"
-        android:gravity="center"
-        android:background="@color/teal_200"
-        app:noteFile="@raw/c3"
-        android:text="c"
-        app:layout_constraintBottom_toTopOf="@+id/guidelineH2"
-        app:layout_constraintEnd_toStartOf="@+id/guidelineV2"
-        app:layout_constraintStart_toStartOf="@+id/guidelineV1"
-        app:layout_constraintTop_toTopOf="@+id/guidelineH1" />
-
-    <itamar.stern.backingtracks.custom_views.NoteView
-        android:id="@+id/cs3"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_margin="4dp"
-        android:gravity="center"
-        android:background="@color/teal_200"
-        app:noteFile="@raw/cs3"
-        android:text="c#"
-        app:layout_constraintBottom_toTopOf="@+id/guidelineH2"
-        app:layout_constraintEnd_toStartOf="@+id/guidelineV3"
-        app:layout_constraintStart_toStartOf="@+id/guidelineV2"
-        app:layout_constraintTop_toTopOf="@+id/guidelineH1" />
-
-    <itamar.stern.backingtracks.custom_views.NoteView
-        android:id="@+id/d3"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_margin="4dp"
-        android:gravity="center"
-        android:background="@color/teal_200"
-        app:noteFile="@raw/d3"
-        android:text="d"
-        app:layout_constraintBottom_toTopOf="@+id/guidelineH2"
-        app:layout_constraintEnd_toStartOf="@+id/guidelineV4"
-        app:layout_constraintStart_toStartOf="@+id/guidelineV3"
-        app:layout_constraintTop_toTopOf="@+id/guidelineH1" />
-
-    <itamar.stern.backingtracks.custom_views.NoteView
-        android:id="@+id/ds3"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_margin="4dp"
-        android:gravity="center"
-        android:background="@color/teal_200"
-        app:noteFile="@raw/ds3"
-        android:text="d#"
-        app:layout_constraintBottom_toTopOf="@+id/guidelineH2"
-        app:layout_constraintEnd_toStartOf="@+id/guidelineV5"
-        app:layout_constraintStart_toStartOf="@+id/guidelineV4"
-        app:layout_constraintTop_toTopOf="@+id/guidelineH1" />
-
-    <itamar.stern.backingtracks.custom_views.NoteView
-        android:id="@+id/e3"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_margin="4dp"
-        android:gravity="center"
-        android:background="@color/teal_200"
-        app:noteFile="@raw/e3"
-        android:text="e"
-        app:layout_constraintBottom_toTopOf="@+id/guidelineH2"
-        app:layout_constraintEnd_toStartOf="@+id/guidelineV6"
-        app:layout_constraintStart_toStartOf="@+id/guidelineV5"
-        app:layout_constraintTop_toTopOf="@+id/guidelineH1" />
-
-    <itamar.stern.backingtracks.custom_views.NoteView
-        android:id="@+id/f3"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_margin="4dp"
-        android:gravity="center"
-        android:background="@color/teal_200"
-        app:noteFile="@raw/f3"
-        android:text="f"
-        app:layout_constraintBottom_toTopOf="@+id/guidelineH1"
-        app:layout_constraintEnd_toStartOf="@+id/guidelineV2"
-        app:layout_constraintStart_toStartOf="@+id/guidelineV1"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <itamar.stern.backingtracks.custom_views.NoteView
-        android:id="@+id/fs3"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_margin="4dp"
-        android:gravity="center"
-        android:background="@color/teal_200"
-        app:noteFile="@raw/fs3"
-        android:text="f#"
-        app:layout_constraintBottom_toTopOf="@+id/guidelineH1"
-        app:layout_constraintEnd_toStartOf="@+id/guidelineV3"
-        app:layout_constraintStart_toStartOf="@+id/guidelineV2"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <itamar.stern.backingtracks.custom_views.NoteView
-        android:id="@+id/g3"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_margin="4dp"
-        android:gravity="center"
-        android:background="@color/teal_200"
-        app:noteFile="@raw/g3"
-        android:text="g"
-        app:layout_constraintBottom_toTopOf="@+id/guidelineH1"
-        app:layout_constraintEnd_toStartOf="@+id/guidelineV4"
-        app:layout_constraintStart_toStartOf="@+id/guidelineV3"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <itamar.stern.backingtracks.custom_views.NoteView
-        android:id="@+id/gs3"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_margin="4dp"
-        android:gravity="center"
-        android:background="@color/teal_200"
-        app:noteFile="@raw/gs3"
-        android:text="g#"
-        app:layout_constraintBottom_toTopOf="@+id/guidelineH1"
-        app:layout_constraintEnd_toStartOf="@+id/guidelineV5"
-        app:layout_constraintStart_toStartOf="@+id/guidelineV4"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <itamar.stern.backingtracks.custom_views.NoteView
-        android:id="@+id/a3"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_margin="4dp"
-        android:gravity="center"
-        android:background="@color/teal_200"
-        app:noteFile="@raw/a3"
-        android:text="a"
-        app:layout_constraintBottom_toTopOf="@+id/guidelineH1"
-        app:layout_constraintEnd_toStartOf="@+id/guidelineV6"
-        app:layout_constraintStart_toStartOf="@+id/guidelineV5"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btnStartSet"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="4dp"
         android:layout_marginEnd="24dp"
         android:text="start set"
         app:layout_constraintEnd_toEndOf="parent"
@@ -668,13 +44,11 @@
     <itamar.stern.backingtracks.custom_views.NoteView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginBottom="28dp"
-        android:padding="24dp"
         android:background="@color/teal_200"
+        android:padding="24dp"
         android:text="space"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/guidelineV6" />
+        app:layout_constraintEnd_toEndOf="@+id/btnChord"
+        app:layout_constraintTop_toBottomOf="@+id/btnChord" />
 
     <Button
         android:id="@+id/btnChord"
@@ -683,4 +57,424 @@
         android:text="add chord"
         app:layout_constraintEnd_toEndOf="@+id/btnDeleteStep"
         app:layout_constraintTop_toBottomOf="@+id/btnDeleteStep" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnDeleteStep"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <itamar.stern.backingtracks.custom_views.NoteView
+                        android:id="@+id/e32"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="4dp"
+                        android:background="#eeeeee"
+                        android:gravity="center"
+                        android:text="e"
+                        app:noteFile="@raw/e3"
+                        tools:layout_editor_absoluteX="95dp"
+                        tools:layout_editor_absoluteY="40dp" />
+
+                    <itamar.stern.backingtracks.custom_views.NoteView
+                        android:id="@+id/f3"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="4dp"
+                        android:background="@color/teal_200"
+                        android:gravity="center"
+                        android:text="f"
+                        app:noteFile="@raw/f3" />
+
+                    <itamar.stern.backingtracks.custom_views.NoteView
+                        android:id="@+id/fs3"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="4dp"
+                        android:background="@color/teal_200"
+                        android:gravity="center"
+                        android:text="f#"
+                        app:noteFile="@raw/fs3" />
+
+                    <itamar.stern.backingtracks.custom_views.NoteView
+                        android:id="@+id/g3"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="4dp"
+                        android:background="@color/teal_200"
+                        android:gravity="center"
+                        android:text="g"
+                        app:noteFile="@raw/g3" />
+
+                    <itamar.stern.backingtracks.custom_views.NoteView
+                        android:id="@+id/gs3"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="4dp"
+                        android:background="@color/teal_200"
+                        android:gravity="center"
+                        android:text="g#"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:noteFile="@raw/gs3" />
+
+                    <itamar.stern.backingtracks.custom_views.NoteView
+                        android:id="@+id/a3"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="4dp"
+                        android:background="@color/teal_200"
+                        android:gravity="center"
+                        android:text="a"
+                        app:noteFile="@raw/a3" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <itamar.stern.backingtracks.custom_views.NoteView
+                        android:id="@+id/b22"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="4dp"
+                        android:background="@color/teal_200"
+                        android:gravity="center"
+                        android:text="b"
+                        app:noteFile="@raw/b2" />
+
+                    <itamar.stern.backingtracks.custom_views.NoteView
+                        android:id="@+id/c32"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="4dp"
+                        android:background="@color/teal_200"
+                        android:gravity="center"
+                        android:text="c"
+                        app:noteFile="@raw/c3" />
+
+                    <itamar.stern.backingtracks.custom_views.NoteView
+                        android:id="@+id/cs3"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="4dp"
+                        android:background="@color/teal_200"
+                        android:gravity="center"
+                        android:text="c#"
+                        app:noteFile="@raw/cs3" />
+
+                    <itamar.stern.backingtracks.custom_views.NoteView
+                        android:id="@+id/d3"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="4dp"
+                        android:background="@color/teal_200"
+                        android:gravity="center"
+                        android:text="d"
+                        app:noteFile="@raw/d3" />
+
+                    <itamar.stern.backingtracks.custom_views.NoteView
+                        android:id="@+id/ds3"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="4dp"
+                        android:background="@color/teal_200"
+                        android:gravity="center"
+                        android:text="d#"
+                        app:noteFile="@raw/ds3" />
+
+                    <itamar.stern.backingtracks.custom_views.NoteView
+                        android:id="@+id/e3"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="4dp"
+                        android:background="@color/teal_200"
+                        android:gravity="center"
+                        android:text="e"
+                        app:noteFile="@raw/e3" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <itamar.stern.backingtracks.custom_views.NoteView
+                        android:id="@+id/g22"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="4dp"
+                        android:background="@color/teal_200"
+                        android:gravity="center"
+                        android:text="g"
+                        app:noteFile="@raw/g2" />
+
+                    <itamar.stern.backingtracks.custom_views.NoteView
+                        android:id="@+id/gs2"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="4dp"
+                        android:background="@color/teal_200"
+                        android:gravity="center"
+                        android:text="g#"
+                        app:noteFile="@raw/gs2" />
+
+                    <itamar.stern.backingtracks.custom_views.NoteView
+                        android:id="@+id/a2"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="4dp"
+                        android:background="@color/teal_200"
+                        android:gravity="center"
+                        android:text="a"
+                        android:textAlignment="center"
+                        app:noteFile="@raw/a2" />
+
+                    <itamar.stern.backingtracks.custom_views.NoteView
+                        android:id="@+id/as2"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="4dp"
+                        android:background="@color/teal_200"
+                        android:gravity="center"
+                        android:text="a#"
+                        app:noteFile="@raw/as2" />
+
+                    <itamar.stern.backingtracks.custom_views.NoteView
+                        android:id="@+id/b2"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="4dp"
+                        android:background="@color/teal_200"
+                        android:gravity="center"
+                        android:text="b"
+                        app:noteFile="@raw/b2" />
+
+                    <itamar.stern.backingtracks.custom_views.NoteView
+                        android:id="@+id/c3"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="4dp"
+                        android:background="@color/teal_200"
+                        android:gravity="center"
+                        android:text="c"
+                        app:noteFile="@raw/c3" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <itamar.stern.backingtracks.custom_views.NoteView
+                        android:id="@+id/d2"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="4dp"
+                        android:background="@color/teal_200"
+                        android:gravity="center"
+                        android:text="d"
+                        app:noteFile="@raw/d2" />
+
+                    <itamar.stern.backingtracks.custom_views.NoteView
+                        android:id="@+id/ds2"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="4dp"
+                        android:background="@color/teal_200"
+                        android:gravity="center"
+                        android:text="d#"
+                        app:noteFile="@raw/ds2" />
+
+                    <itamar.stern.backingtracks.custom_views.NoteView
+                        android:id="@+id/e2"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="4dp"
+                        android:background="@color/teal_200"
+                        android:gravity="center"
+                        android:text="e"
+                        app:noteFile="@raw/e2" />
+
+                    <itamar.stern.backingtracks.custom_views.NoteView
+                        android:id="@+id/f2"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="4dp"
+                        android:background="@color/teal_200"
+                        android:gravity="center"
+                        android:text="f"
+                        app:noteFile="@raw/f2" />
+
+                    <itamar.stern.backingtracks.custom_views.NoteView
+                        android:id="@+id/fs2"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="4dp"
+                        android:background="@color/teal_200"
+                        android:gravity="center"
+                        android:text="f#"
+                        app:noteFile="@raw/fs2" />
+
+                    <itamar.stern.backingtracks.custom_views.NoteView
+                        android:id="@+id/g2"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="4dp"
+                        android:background="@color/teal_200"
+                        android:gravity="center"
+                        android:text="g"
+                        app:noteFile="@raw/g2" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <itamar.stern.backingtracks.custom_views.NoteView
+                        android:id="@+id/a1"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="4dp"
+                        android:background="@color/teal_200"
+                        android:gravity="center"
+                        android:text="a"
+                        app:noteFile="@raw/a1" />
+
+                    <itamar.stern.backingtracks.custom_views.NoteView
+                        android:id="@+id/as1"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="4dp"
+                        android:background="@color/teal_200"
+                        android:gravity="center"
+                        android:text="a#"
+                        app:noteFile="@raw/as1" />
+
+                    <itamar.stern.backingtracks.custom_views.NoteView
+                        android:id="@+id/b1"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="4dp"
+                        android:background="@color/teal_200"
+                        android:gravity="center"
+                        android:text="b"
+                        app:noteFile="@raw/b1" />
+
+
+                    <itamar.stern.backingtracks.custom_views.NoteView
+                        android:id="@+id/c2"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="4dp"
+                        android:background="@color/teal_200"
+                        android:gravity="center"
+                        android:text="c"
+                        app:noteFile="@raw/c2" />
+
+                    <itamar.stern.backingtracks.custom_views.NoteView
+                        android:id="@+id/cs2"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="4dp"
+                        android:background="@color/teal_200"
+                        android:gravity="center"
+                        android:text="c#"
+                        app:noteFile="@raw/cs2" />
+
+                    <itamar.stern.backingtracks.custom_views.NoteView
+                        android:id="@+id/d22"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="4dp"
+                        android:background="@color/teal_200"
+                        android:gravity="center"
+                        android:text="d"
+                        app:noteFile="@raw/d2" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <itamar.stern.backingtracks.custom_views.NoteView
+                        android:id="@+id/e1"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="4dp"
+                        android:gravity="center"
+                        android:text="e"
+                        app:noteFile="@raw/e1" />
+
+                    <itamar.stern.backingtracks.custom_views.NoteView
+                        android:id="@+id/f1"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="4dp"
+                        android:background="@color/teal_200"
+                        android:gravity="center"
+                        android:text="f"
+                        app:noteFile="@raw/f1" />
+
+                    <itamar.stern.backingtracks.custom_views.NoteView
+                        android:id="@+id/fs1"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="4dp"
+                        android:background="@color/teal_200"
+                        android:gravity="center"
+                        android:text="f#"
+                        app:noteFile="@raw/fs1" />
+
+                    <itamar.stern.backingtracks.custom_views.NoteView
+                        android:id="@+id/g1"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="4dp"
+                        android:background="@color/teal_200"
+                        android:gravity="center"
+                        android:text="g"
+                        app:noteFile="@raw/g1" />
+
+                    <itamar.stern.backingtracks.custom_views.NoteView
+                        android:id="@+id/gs1"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="4dp"
+                        android:background="@color/teal_200"
+                        android:gravity="center"
+                        android:text="g#"
+                        app:noteFile="@raw/gs1" />
+
+                    <itamar.stern.backingtracks.custom_views.NoteView
+                        android:id="@+id/a12"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="4dp"
+                        android:background="@color/teal_200"
+                        android:gravity="center"
+                        android:text="a"
+                        app:noteFile="@raw/a1" />
+
+
+                </TableRow>
+            </TableLayout>
+        </HorizontalScrollView>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
