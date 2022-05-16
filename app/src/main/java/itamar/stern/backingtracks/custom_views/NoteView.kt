@@ -4,7 +4,7 @@ import android.content.Context
 import android.graphics.Color
 import android.util.AttributeSet
 import android.widget.TextView
-import itamar.stern.backingtracks.AddNotesMode
+import itamar.stern.backingtracks.AddingNotesMode
 import itamar.stern.backingtracks.R
 import itamar.stern.backingtracks.media_player.MyMediaPlayer
 import itamar.stern.backingtracks.media_player.Track
@@ -26,11 +26,11 @@ class NoteView(
 
         setOnClickListener {
             noteFile.apply {
-                when(Track.addNotesMode) {
-                    AddNotesMode.SINGLE -> {
+                when(Track.chordButtonMode.value) {
+                    AddingNotesMode.SINGLE -> {
                         Track.set.add(mutableListOf(this))
                     }
-                    AddNotesMode.CHORD -> {
+                    AddingNotesMode.CHORD -> {
                         Track.set[Track.set.size - 1].add(this)
                     }
                 }

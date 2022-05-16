@@ -1,83 +1,68 @@
 package itamar.stern.backingtracks
 
-import android.content.Context
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.AttributeSet
-import android.view.View
-import androidx.annotation.ColorInt
-import androidx.annotation.RawRes
+import androidx.lifecycle.lifecycleScope
 import itamar.stern.backingtracks.databinding.ActivityMainBinding
 import itamar.stern.backingtracks.media_player.MyMediaPlayer
 import itamar.stern.backingtracks.media_player.Track
-import java.sql.Time
+import kotlinx.coroutines.flow.StateFlow
+import kotlinx.coroutines.flow.collect
+import org.koin.androidx.viewmodel.ext.android.viewModel
 import java.util.*
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var mediaPlayer: MyMediaPlayer
     private lateinit var binding: ActivityMainBinding
-    private val set get() = Track.set
-    private var timer = Timer()
+    private val viewModel by viewModel<MainViewModel>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        mediaPlayer = MyMediaPlayer(this)
-        setViews()
+        initViews()
+        collectFlows()
     }
 
-    private fun runSet() {
-        var count = 0
-        timer.cancel()
-        timer = Timer()
-        timer.schedule(object : TimerTask() {
-            override fun run() {
-                for (note in set[count]) {
-                    mediaPlayer.startAudio(note)
-                }
-                if (count < set.size - 1) count++ else count = 0
-            }
-        }, 0, 250)
-    }
-
-    private fun setViews() = binding.apply {
+    private fun initViews() = binding.apply {
         btnStartSet.setOnClickListener {
-            if (set.isNotEmpty()) runSet()
+            viewModel.startSetClicked()
         }
         btnPauseSet.setOnClickListener {
-            timer.cancel()
+            viewModel.pauseSetClicked()
         }
         btnResetSet.setOnClickListener {
-            timer.cancel()
-            set.clear()
+            viewModel.resetSetClicked()
         }
         btnDeleteStep.setOnClickListener {
-            timer.cancel()
-            set.removeLast()
+            viewModel.deleteStepClicked()
         }
         btnChord.setOnClickListener {
-            with(Track){
-                when(addNotesMode) {
-                    AddNotesMode.SINGLE -> {
-                        set.add(mutableListOf())
-                        addNotesMode = AddNotesMode.CHORD
-                        btnChord.setBackgroundColor(Color.GREEN)
-                    }
-                    AddNotesMode.CHORD -> {
-                        addNotesMode = AddNotesMode.SINGLE
-                        btnChord.setBackgroundColor(resources.getColor(R.color.purple_500, null))
-                    }
+            viewModel.chordBtnClicked()
+        }
+    }
+
+    private fun collectFlows() {
+        collectChordButtonMode(Track.chordButtonMode)
+    }
+
+    private fun collectChordButtonMode(chordButtonMode: StateFlow<AddingNotesMode>) = lifecycleScope.launchWhenStarted {
+        chordButtonMode.collect { buttonMode ->
+            when(buttonMode) {
+                AddingNotesMode.SINGLE -> {
+                    binding.btnChord.setBackgroundColor(resources.getColor(R.color.purple_500, null))
+                }
+                AddingNotesMode.CHORD -> {
+                    binding.btnChord.setBackgroundColor(Color.GREEN)
                 }
             }
         }
     }
 }
 
-enum class AddNotesMode {
+enum class AddingNotesMode {
     SINGLE,
     CHORD
 }

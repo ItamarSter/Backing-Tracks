@@ -1,9 +1,10 @@
 package itamar.stern.backingtracks.media_player
 
-import itamar.stern.backingtracks.AddNotesMode
+import itamar.stern.backingtracks.AddingNotesMode
+import kotlinx.coroutines.flow.MutableStateFlow
 
 object Track {
     val set = mutableListOf<MutableList<Int>>()
 
-    var addNotesMode = AddNotesMode.SINGLE
+    val chordButtonMode = MutableStateFlow(AddingNotesMode.SINGLE)
 }
