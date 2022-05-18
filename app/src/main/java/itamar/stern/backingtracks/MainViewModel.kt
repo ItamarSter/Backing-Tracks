@@ -11,7 +11,7 @@ class MainViewModel(
 
 
     fun startSetClicked() {
-        if (Track.set.isNotEmpty()) audioManager.runSet()
+        if (Track.section.isNotEmpty()) audioManager.runSet()
     }
 
     fun pauseSetClicked() {
@@ -20,18 +20,19 @@ class MainViewModel(
 
     fun resetSetClicked() {
         audioManager.pauseAudio()
-        Track.set.clear()
+        Track.section.clear()
     }
 
     fun deleteStepClicked() {
+        if (Track.section.isEmpty()) return
         audioManager.pauseAudio()
-        Track.set.removeLast()
+        Track.section.removeLast()
     }
 
     fun chordBtnClicked() = with(Track) {
         when (chordButtonMode.value) {
             AddingNotesMode.SINGLE -> {
-                set.add(mutableListOf())
+                section.add(mutableListOf())
                 chordButtonMode.value = AddingNotesMode.CHORD
             }
             AddingNotesMode.CHORD -> {

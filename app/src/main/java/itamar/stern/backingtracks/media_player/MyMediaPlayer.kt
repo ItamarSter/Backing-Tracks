@@ -2,9 +2,7 @@ package itamar.stern.backingtracks.media_player
 
 import android.content.Context
 import android.media.MediaPlayer
-import android.media.SoundPool
 import androidx.annotation.RawRes
-import itamar.stern.backingtracks.R
 import java.util.*
 
 class MyMediaPlayer(
@@ -13,33 +11,49 @@ class MyMediaPlayer(
 
     private var timer = Timer()
 
-    fun startAudio(@RawRes audioFile: Int) {
-        try {
-            MediaPlayer.create(context, audioFile).apply {
-                start()
-                setOnCompletionListener {
-                    it.release()
-                }
+    fun getPreparedMediaPlayersList(audioFilesList: List<Int>): MutableList<MediaPlayer?> {
+        val preparedMediaPlayersList = mutableListOf<MediaPlayer?>()
+        for (audioFile in audioFilesList) {
+            try {
+                preparedMediaPlayersList.add(MediaPlayer.create(context, audioFile))
+            } catch (e: Throwable) {
+                //problem in the audio file
             }
-        } catch (e: Throwable) {
-            //problem in the audio file
+        }
+        return preparedMediaPlayersList
+    }
+
+    fun startAudio(mediaPlayer: MediaPlayer?) {
+        mediaPlayer?.run {
+            start()
+            setOnCompletionListener {
+                it.release()
+            }
         }
     }
 
-    fun pauseAudio(){
+    fun pauseAudio() {
         timer.cancel()
     }
 
+    private var sectionCount = 0
+    private var sectionMediaPlayersList = mutableListOf<MediaPlayer?>()
+
+    private fun prepareNextNoteOfSet() {
+        sectionMediaPlayersList = getPreparedMediaPlayersList(Track.section[sectionCount])
+    }
+
     fun runSet() {
-        var count = 0
+        prepareNextNoteOfSet()
         timer.cancel()
         timer = Timer()
         timer.scheduleAtFixedRate(object : TimerTask() {
             override fun run() {
-                for (note in Track.set[count]) {
-                    startAudio(note)
+                for (mediaPlayer in sectionMediaPlayersList) {
+                    startAudio(mediaPlayer)
                 }
-                if (count < Track.set.size - 1) count++ else count = 0
+                if (sectionCount < Track.section.size - 1) sectionCount++ else sectionCount = 0
+                prepareNextNoteOfSet()
             }
         }, 0, 250)
     }

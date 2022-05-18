@@ -28,14 +28,14 @@ class NoteView(
             noteFile.apply {
                 when(Track.chordButtonMode.value) {
                     AddingNotesMode.SINGLE -> {
-                        Track.set.add(mutableListOf(this))
+                        Track.section.add(mutableListOf(this))
                     }
                     AddingNotesMode.CHORD -> {
-                        Track.set[Track.set.size - 1].add(this)
+                        Track.section[Track.section.size - 1].add(this)
                     }
                 }
 
-                mediaPlayer.startAudio(this)
+                mediaPlayer.startAudio(mediaPlayer.getPreparedMediaPlayersList(listOf(this))[0])
             }
         }
 
