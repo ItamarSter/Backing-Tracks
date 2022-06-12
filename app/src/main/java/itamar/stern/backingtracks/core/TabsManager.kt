@@ -22,4 +22,11 @@ object TabsManager {
             }
         }
     }
+
+    fun cleanTabs() {
+        for (lineMap in tabLinesMap) {
+            lineMap.value.value = lineMap.value.value.substring(0,4)
+        }
+    }
+
 }

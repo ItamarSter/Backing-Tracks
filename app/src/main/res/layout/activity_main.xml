@@ -481,42 +481,60 @@
                 </TableLayout>
             </HorizontalScrollView>
 
-            <itamar.stern.backingtracks.custom_views.TabLine
-                android:id="@+id/tabLine6"
+            <HorizontalScrollView
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
-                style="@style/TabLineStyle"
-                android:text=" E|-" />
-            <itamar.stern.backingtracks.custom_views.TabLine
-                android:id="@+id/tabLine5"
-                android:layout_width="match_parent"
-                style="@style/TabLineStyle"
-                android:text=" B|-"
-                android:layout_height="40dp" />
-            <itamar.stern.backingtracks.custom_views.TabLine
-                android:id="@+id/tabLine4"
-                style="@style/TabLineStyle"
-                android:text=" G|-"
-                android:layout_width="match_parent"
-                android:layout_height="40dp" />
-            <itamar.stern.backingtracks.custom_views.TabLine
-                android:id="@+id/tabLine3"
-                style="@style/TabLineStyle"
-                android:text=" D|-"
-                android:layout_width="match_parent"
-                android:layout_height="40dp" />
-            <itamar.stern.backingtracks.custom_views.TabLine
-                android:id="@+id/tabLine2"
-                style="@style/TabLineStyle"
-                android:text=" A|-"
-                android:layout_width="match_parent"
-                android:layout_height="40dp" />
-            <itamar.stern.backingtracks.custom_views.TabLine
-                android:id="@+id/tabLine1"
-                style="@style/TabLineStyle"
-                android:text=" E|-"
-                android:layout_width="match_parent"
-                android:layout_height="40dp" />
+                android:layout_height="wrap_content"
+                android:fillViewport="true">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <itamar.stern.backingtracks.custom_views.TabLine
+                        android:id="@+id/tabLine6"
+                        style="@style/TabLineStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:text=" E|-" />
+
+                    <itamar.stern.backingtracks.custom_views.TabLine
+                        android:id="@+id/tabLine5"
+                        style="@style/TabLineStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:text=" B|-" />
+
+                    <itamar.stern.backingtracks.custom_views.TabLine
+                        android:id="@+id/tabLine4"
+                        style="@style/TabLineStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:text=" G|-" />
+
+                    <itamar.stern.backingtracks.custom_views.TabLine
+                        android:id="@+id/tabLine3"
+                        style="@style/TabLineStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:text=" D|-" />
+
+                    <itamar.stern.backingtracks.custom_views.TabLine
+                        android:id="@+id/tabLine2"
+                        style="@style/TabLineStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:text=" A|-" />
+
+                    <itamar.stern.backingtracks.custom_views.TabLine
+                        android:id="@+id/tabLine1"
+                        style="@style/TabLineStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:text=" E|-" />
+
+                </LinearLayout>
+            </HorizontalScrollView>
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

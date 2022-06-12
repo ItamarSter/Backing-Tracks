@@ -29,7 +29,7 @@ class AudioMaps {
             Pair("a2", "4#2"),
             Pair("as2", "4#3"),
             Pair("b2", "4#4"),
-            Pair("c2", "4#5"),
+            Pair("c3", "4#5"),
 
             Pair("b22", "5#0"),
             Pair("c32", "5#1"),

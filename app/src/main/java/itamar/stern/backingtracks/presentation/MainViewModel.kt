@@ -22,7 +22,7 @@ class MainViewModel(
     fun resetSetClicked() {
         audioManager.pauseAudio()
         Track.section.clear()
-        TabsManager.tabLinesMap.clear()
+        TabsManager.cleanTabs()
     }
 
     fun deleteStepClicked() {
