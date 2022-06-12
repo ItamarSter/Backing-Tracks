@@ -1,6 +1,6 @@
-package itamar.stern.backingtracks.media_player
+package itamar.stern.backingtracks.core
 
-import itamar.stern.backingtracks.AddingNotesMode
+import itamar.stern.backingtracks.presentation.AddingNotesMode
 import kotlinx.coroutines.flow.MutableStateFlow
 
 object Track {

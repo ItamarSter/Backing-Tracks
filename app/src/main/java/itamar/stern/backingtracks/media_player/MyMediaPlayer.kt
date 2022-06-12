@@ -2,7 +2,7 @@ package itamar.stern.backingtracks.media_player
 
 import android.content.Context
 import android.media.MediaPlayer
-import androidx.annotation.RawRes
+import itamar.stern.backingtracks.core.Track
 import java.util.*
 
 class MyMediaPlayer(

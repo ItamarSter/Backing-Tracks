@@ -1,8 +1,9 @@
-package itamar.stern.backingtracks
+package itamar.stern.backingtracks.presentation
 
 import androidx.lifecycle.ViewModel
+import itamar.stern.backingtracks.core.TabsManager
 import itamar.stern.backingtracks.media_player.MyMediaPlayer
-import itamar.stern.backingtracks.media_player.Track
+import itamar.stern.backingtracks.core.Track
 
 class MainViewModel(
     private val audioManager: MyMediaPlayer
@@ -21,6 +22,7 @@ class MainViewModel(
     fun resetSetClicked() {
         audioManager.pauseAudio()
         Track.section.clear()
+        TabsManager.tabLinesMap.clear()
     }
 
     fun deleteStepClicked() {
@@ -41,4 +43,8 @@ class MainViewModel(
         }
     }
 
+    fun spaceBtnClicked() {
+        Track.section.add(mutableListOf())
+        Track.chordButtonMode.value = AddingNotesMode.SINGLE
+    }
 }
