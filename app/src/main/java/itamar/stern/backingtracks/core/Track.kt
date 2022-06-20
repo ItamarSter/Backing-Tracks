@@ -7,4 +7,6 @@ object Track {
     val section = mutableListOf<MutableList<Int>>()
 
     val chordButtonMode = MutableStateFlow(AddingNotesMode.SINGLE)
+
+    val tempo = MutableStateFlow(250)
 }

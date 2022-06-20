@@ -4,6 +4,7 @@ import android.graphics.Color
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.NumberPicker
 import androidx.annotation.RequiresApi
 import androidx.lifecycle.lifecycleScope
 import itamar.stern.backingtracks.R
@@ -49,6 +50,24 @@ class MainActivity : AppCompatActivity() {
         }
         btnSpace.setOnClickListener {
             viewModel.spaceBtnClicked()
+        }
+        btnSaveSet.setOnClickListener {
+            editTextSectionName.text?.let {
+                viewModel.saveBtnClicked(it.toString())
+                editTextSectionName.text.clear()
+            }
+        }
+        btnOpenSet.setOnClickListener {
+            editTextSectionName.text?.let {
+                viewModel.openSetClicked(it.toString())
+                editTextSectionName.text.clear()
+            }
+        }
+        tempoPicker.maxValue = 500
+        tempoPicker.minValue = 50
+        tempoPicker.value = 250
+        tempoPicker.setOnValueChangedListener { _, _, newVal ->
+            viewModel.tempoChanged(newVal)
         }
     }
 

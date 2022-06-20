@@ -6,6 +6,13 @@
     android:layout_height="match_parent"
     tools:context=".presentation.MainActivity">
 
+    <NumberPicker
+        android:id="@+id/tempoPicker"
+        android:translationZ="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@+id/btnDeleteStep"
+        app:layout_constraintTop_toTopOf="@+id/btnStartSet" />
 
     <Button
         android:id="@+id/btnStartSet"
@@ -16,6 +23,34 @@
         android:text="start set"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextSectionName"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:hint="Section name"
+        app:layout_constraintBottom_toBottomOf="@+id/btnSpace"
+        app:layout_constraintEnd_toStartOf="@+id/btnSpace"
+        android:inputType="text"
+        android:translationZ="10dp"/>
+
+    <Button
+        android:text="open set"
+        android:id="@+id/btnOpenSet"
+        app:layout_constraintEnd_toEndOf="@id/btnSpace"
+        app:layout_constraintTop_toBottomOf="@id/btnSpace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btnSaveSet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="save set"
+        app:layout_constraintBottom_toBottomOf="@+id/btnChord"
+        app:layout_constraintEnd_toStartOf="@+id/btnChord" />
 
     <Button
         android:id="@+id/btnPauseSet"

@@ -38,6 +38,7 @@ class NoteView(
                     }
                     AddingNotesMode.CHORD -> {
                         Track.section[Track.section.size - 1].add(this)
+                        TabsManager.addTabInChordMode(line!!, fret!!)
                     }
                 }
 

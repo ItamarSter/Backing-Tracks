@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
 }
 
 android {
@@ -36,6 +37,17 @@ android {
 }
 
 dependencies {
+    // gson
+    implementation 'com.google.code.gson:gson:2.8.5'
+
+    // room
+    def room_version = "2.4.1"
+    implementation "androidx.room:room-runtime:$room_version"
+    // To use Kotlin annotation processing tool (kapt)
+    kapt "androidx.room:room-compiler:$room_version"
+
+    // koin
+    annotationProcessor "androidx.room:room-compiler:$room_version"
 
     implementation "io.insert-koin:koin-android:3.2.0-beta-1"
 
