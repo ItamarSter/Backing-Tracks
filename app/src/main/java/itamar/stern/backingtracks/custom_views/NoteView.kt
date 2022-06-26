@@ -5,11 +5,11 @@ import android.graphics.Color
 import android.util.AttributeSet
 import android.widget.TextView
 import itamar.stern.backingtracks.AudioMaps
-import itamar.stern.backingtracks.presentation.AddingNotesMode
 import itamar.stern.backingtracks.R
 import itamar.stern.backingtracks.core.TabsManager
 import itamar.stern.backingtracks.media_player.MyMediaPlayer
 import itamar.stern.backingtracks.core.Track
+import itamar.stern.backingtracks.presentation.guitar.AddingNotesMode
 
 class NoteView(
     context: Context,

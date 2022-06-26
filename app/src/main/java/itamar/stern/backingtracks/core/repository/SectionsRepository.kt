@@ -10,7 +10,7 @@ class SectionsRepository(
     private val sectionsDB: SectionsDB,
     private val gson: Gson
 ) {
-    fun saveSectionToDb(sectionName: String) {
+    fun saveSectionToDb(sectionName: String, callback: (Message) -> Unit) {
         val jsonSection = getJsonSection()
         saveSectionToDb(jsonSection, sectionName)
     }
@@ -18,7 +18,12 @@ class SectionsRepository(
     fun openSet(sectionName: String) {
         Track.section.clear()
         val jsonSection = sectionsDB.sectionDao().getSetByName(sectionName).section
-        Track.section.addAll(gson.fromJson(jsonSection, object : TypeToken<MutableList<MutableList<Int>>>(){}.type))
+        Track.section.addAll(
+            gson.fromJson(
+                jsonSection,
+                object : TypeToken<MutableList<MutableList<Int>>>() {}.type
+            )
+        )
     }
 
     private fun getJsonSection(): String {
@@ -28,4 +33,9 @@ class SectionsRepository(
     private fun saveSectionToDb(jsonSection: String, sectionName: String) {
         sectionsDB.sectionDao().insertSection(Section(Math.random(), jsonSection, sectionName))
     }
+}
+
+sealed class Message(val message: String) {
+    class Error (message: String) : Message(message)
+    class Success (message: String) : Message(message)
 }

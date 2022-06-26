@@ -1,6 +1,6 @@
 package itamar.stern.backingtracks.core
 
-import itamar.stern.backingtracks.presentation.AddingNotesMode
+import itamar.stern.backingtracks.presentation.guitar.AddingNotesMode
 import kotlinx.coroutines.flow.MutableStateFlow
 
 object Track {
